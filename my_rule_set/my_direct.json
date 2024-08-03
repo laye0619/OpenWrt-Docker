@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain": [
+                "f.laye.wang",
+                "laye.wang",
+                "ai.laye.wang"
+            ],
+            "domain_suffix": [
+                "home.laye.wang"
+            ]
+        }
+    ]
+}
