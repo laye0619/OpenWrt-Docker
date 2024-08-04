@@ -3,7 +3,8 @@
     "rules": [
         {
             "domain": [
-                "p.laye.wang"
+                "p.laye.wang",
+                "r2.laye.wang"
             ],
             "domain_suffix": []
         }
