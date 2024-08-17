@@ -42,14 +42,26 @@ config odhcpd 'odhcpd'
 	option loglevel '4'
 
 config host
-	option name 'K662d-woshi'
+	option name 'K662d-East'
 	list mac '9C:73:70:D3:5F:22'
 	option ip '192.168.1.21'
 	list tag 'router'
 
 config host
-	option name 'k662d-shufang'
+	option name 'K662d-West'
 	list mac '9C:73:70:D3:60:98'
 	option ip '192.168.1.22'
 	list tag 'router'
+
+config host
+	option name 'Laye-MBP'
+	list mac 'A0:CE:C8:32:3D:A0'
+	option ip '192.168.1.23'
+
+config ipset
+	list name '@homeproxy_mainland_addr_v4'
+	option table_family 'ip'
+	list domain 'mask.icloud.com'
+	list domain 'mask-h2.icloud.com'
+	list domain 'mask.apple-dns.net'
 
