@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "tradingview.com"
+            ],
+            "domain_keyword": [
+                "tradingview"
+            ]
+        }
+    ]
+}
