@@ -18,6 +18,7 @@ config dnsmasq
 	option localservice '1'
 	option dns_redirect '1'
 	option ednspacket_max '1232'
+	option filter_aaaa '1'
 
 config dhcp 'lan'
 	option interface 'lan'
@@ -25,10 +26,6 @@ config dhcp 'lan'
 	option limit '150'
 	option leasetime '12h'
 	option dhcpv4 'server'
-	option dhcpv6 'server'
-	option ra 'server'
-	list ra_flags 'managed-config'
-	list ra_flags 'other-config'
 	list dhcp_option 'tag:router,3,192.168.1.1'
 
 config dhcp 'wan'
@@ -57,5 +54,4 @@ config host
 	option name 'Laye-MBP'
 	list mac 'A0:CE:C8:32:3D:A0'
 	option ip '192.168.1.23'
-
 
