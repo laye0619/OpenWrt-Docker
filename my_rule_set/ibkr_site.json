@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "ibkr.com",
+                "interactivebrokers.com"
+            ],
+            "domain_keyword": [
+                "ibkr",
+                "interactivebrokers"
+            ]
+        }
+    ]
+}
