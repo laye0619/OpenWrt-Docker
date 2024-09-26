@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "ibkr.com",
+                "interactivebrokers.com",
+                "interactivebrokers.ie",
+                "interactivebrokers.co.uk",
+                "tradingview.com",
+                "kraken.com",
+                "bitfinex.com"
+            ],
+            "domain_keyword": [
+                "ibkr",
+                "interactivebrokers",
+                "kraken",
+                "bitfinex"
+            ]
+        }
+    ]
+}
