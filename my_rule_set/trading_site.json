@@ -9,13 +9,19 @@
                 "interactivebrokers.co.uk",
                 "tradingview.com",
                 "kraken.com",
-                "bitfinex.com"
+                "bitfinex.com",
+                "ifastgb.com",
+                "schwab.com",
+                "sc.com"
             ],
             "domain_keyword": [
                 "ibkr",
                 "interactivebrokers",
                 "kraken",
-                "bitfinex"
+                "bitfinex",
+                "ifast",
+                "ifastgb",
+                "schwab"
             ]
         }
     ]
