@@ -4,8 +4,7 @@
         {
             "domain": [
                 "f.laye.wang",
-                "o.laye.wang",
-                "laye.wang"
+                "o.laye.wang"
             ],
             "domain_suffix": [
                 "home.laye.wang"
@@ -13,7 +12,7 @@
             "ip_cidr": [
                 "52.213.96.170",
                 "104.218.164.217",
-                "213.35.115.227"
+                "213.35.98.217"
             ]
         }
     ]
