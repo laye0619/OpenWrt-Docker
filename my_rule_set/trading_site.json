@@ -2,6 +2,9 @@
     "version": 1,
     "rules": [
         {
+            "domain": [
+                "telemetry.tradingview.com"
+            ],
             "domain_suffix": [
                 "ibkr.com",
                 "interactivebrokers.com",
