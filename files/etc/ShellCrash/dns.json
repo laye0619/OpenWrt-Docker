@@ -1,0 +1,134 @@
+{
+	"dns": {
+		"hosts": {
+			"doh.pub": [
+				"1.12.12.12",
+				"120.53.53.53"
+			],
+			"161121.alidns.com": [
+				"223.5.5.5",
+				"223.6.6.6"
+			],
+			"dns.google": [
+				"8.8.8.8",
+				"8.8.4.4"
+			],
+			"cloudflare-dns.com": [
+				"1.1.1.1",
+				"1.0.0.1"
+			],
+			"doh.opendns.com": [
+				"146.112.41.2"
+			],
+			"dns.quad9.net": [
+				"9.9.9.9",
+				"149.112.112.112"
+			]
+		},
+		"servers": [
+			{
+				"tag": "dns_block",
+				"address": "rcode://success"
+			},
+			{
+				"tag": "dns_direct",
+				"address": [
+					"192.168.1.1",
+					"https://161121.alidns.com/dns-query",
+					"https://doh.pub/dns-query"
+				],
+				"detour": "DIRECT"
+			},
+			{
+				"tag": "dns_proxy",
+				"address": [
+					"https://dns.google/dns-query",
+					"https://cloudflare-dns.com/dns-query",
+					"https://doh.opendns.com/dns-query",
+					"https://dns.quad9.net/dns-query"
+				]
+			},
+			{
+				"tag": "dns_fakeip",
+				"address": "fakeip"
+			}
+		],
+		"rules": [
+			{
+				"outbound": [
+					"any"
+				],
+				"server": "dns_direct"
+			},
+			{
+				"clash_mode": [
+					"Direct"
+				],
+				"query_type": [
+					"A"
+				],
+				"server": "dns_direct"
+			},
+			{
+				"clash_mode": [
+					"Global"
+				],
+				"query_type": [
+					"A"
+				],
+				"server": "dns_proxy"
+			},
+			{
+				"rule_set": [
+					"proxy"
+				],
+				"query_type": [
+					"A"
+				],
+				"server": "dns_fakeip",
+				"rewrite_ttl": 1
+			},
+			{
+				"rule_set": [
+					"cn"
+				],
+				"query_type": [
+					"A"
+				],
+				"server": "dns_direct"
+			},
+			{
+				"fallback_rules": [
+					{
+						"rule_set": [
+							"cnip"
+						],
+						"server": "dns_direct"
+					},
+					{
+						"match_all": true,
+						"server": "dns_fakeip",
+						"rewrite_ttl": 1
+					}
+				],
+				"server": "dns_proxy"
+			}
+		],
+		"final": "dns_direct",
+		"strategy": "prefer_ipv4",
+		"independent_cache": true,
+		"lazy_cache": true,
+		"reverse_mapping": true,
+		"mapping_override": true,
+		"fakeip": {
+			"enabled": true,
+			"inet4_range": "198.18.0.0/15",
+			"exclude_rule": {
+				"rule_set": [
+					"fakeip-filter",
+					"private"
+				]
+			}
+		}
+	}
+}
