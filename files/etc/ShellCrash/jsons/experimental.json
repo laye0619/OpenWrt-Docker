@@ -1,0 +1,16 @@
+{
+    "experimental": {
+        "clash_api": {
+            "external_controller": "0.0.0.0:9999",
+            "external_ui": "ui",
+            "secret": "",
+            "default_mode": "Rule"
+        },
+        "cache_file": {
+            "enabled": true,
+            "path": "/tmp/ShellCrash/cache.db",
+            "cache_id": "",
+            "store_fakeip": false
+        }
+    }
+}
