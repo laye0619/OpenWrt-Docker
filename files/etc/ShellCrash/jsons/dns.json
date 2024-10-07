@@ -80,7 +80,9 @@
 			},
 			{
 				"rule_set": [
-					"proxy"
+					"proxy",
+					"trading",
+					"okx"
 				],
 				"query_type": [
 					"A"
