@@ -82,7 +82,8 @@
 				"rule_set": [
 					"proxy",
 					"trading",
-					"okx"
+					"okx",
+                    "my_proxy"
 				],
 				"query_type": [
 					"A"
