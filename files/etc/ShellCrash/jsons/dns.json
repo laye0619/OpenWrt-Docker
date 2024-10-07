@@ -80,10 +80,10 @@
 			},
 			{
 				"rule_set": [
-					"proxy",
+					"gfw",
 					"trading",
 					"okx",
-                    "my_proxy"
+					"my_proxy"
 				],
 				"query_type": [
 					"A"
