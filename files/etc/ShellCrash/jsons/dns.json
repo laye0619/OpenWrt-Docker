@@ -46,8 +46,7 @@
 					"https://cloudflare-dns.com/dns-query",
 					"https://doh.opendns.com/dns-query",
 					"https://dns.quad9.net/dns-query"
-				],
-				"detour": "GLOBAL"
+				]
 			},
 			{
 				"tag": "dns_fakeip",
