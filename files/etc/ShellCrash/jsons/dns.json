@@ -23,6 +23,10 @@
 			"dns.quad9.net": [
 				"9.9.9.9",
 				"149.112.112.112"
+			],
+			"doh.sb": [
+				"185.222.222.222",
+				"45.11.45.11"
 			]
 		},
 		"servers": [
@@ -45,7 +49,8 @@
 					"https://dns.google/dns-query",
 					"https://cloudflare-dns.com/dns-query",
 					"https://doh.opendns.com/dns-query",
-					"https://dns.quad9.net/dns-query"
+					"https://dns.quad9.net/dns-query",
+					"https://doh.sb/dns-query"
 				]
 			},
 			{
