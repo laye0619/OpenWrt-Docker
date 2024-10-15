@@ -9,6 +9,11 @@
 				"223.5.5.5",
 				"223.6.6.6"
 			],
+			"doh.360.cn": [
+				"101.199.254.118",
+				"123.6.48.18",
+				"112.65.69.15"
+			],
 			"dns.google": [
 				"8.8.8.8",
 				"8.8.4.4"
@@ -37,9 +42,9 @@
 			{
 				"tag": "dns_direct",
 				"address": [
-					"192.168.1.1",
 					"https://161121.alidns.com/dns-query",
-					"https://doh.pub/dns-query"
+					"https://doh.pub/dns-query",
+					"https://doh.360.cn/dns-query"
 				],
 				"detour": "DIRECT"
 			},
