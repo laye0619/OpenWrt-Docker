@@ -84,6 +84,21 @@
 					"A"
 				],
 				"server": "dns_proxy"
+			},
+			{
+				"rule_set": [
+					"private",
+					"microsoft-cn",
+					"apple-cn",
+					"google-cn",
+					"games-cn",
+					"my_direct",
+					"cn"
+				],
+				"query_type": [
+					"A"
+				],
+				"server": "dns_direct"
 			}
 		],
 		"final": "dns_proxy",
