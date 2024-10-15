@@ -1,1 +1,4 @@
 30 3 * * 1 sleep 70 && touch /etc/banner && reboot
+15 14 * * * curl -X PUT -H "Content-Type: application/json" -d '{"name":"ORACLE_Vless_Vision_NNR"}' http://localhost:9999/proxies/ORACLE
+15 1 * * * curl -X PUT -H "Content-Type: application/json" -d '{"name":"ORACLE_Hysteria2"}' http://localhost:9999/proxies/ORACLE
+
