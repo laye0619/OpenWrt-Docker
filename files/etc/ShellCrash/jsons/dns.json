@@ -42,6 +42,7 @@
 			{
 				"tag": "dns_direct",
 				"address": [
+					"192.168.1.1",
 					"https://161121.alidns.com/dns-query",
 					"https://doh.pub/dns-query",
 					"https://doh.360.cn/dns-query"
@@ -57,10 +58,6 @@
 					"https://dns.quad9.net/dns-query",
 					"https://doh.sb/dns-query"
 				]
-			},
-			{
-				"tag": "dns_fakeip",
-				"address": "fakeip"
 			}
 		],
 		"rules": [
@@ -87,61 +84,13 @@
 					"A"
 				],
 				"server": "dns_proxy"
-			},
-			{
-				"rule_set": [
-					"gfw",
-					"trading",
-					"okx",
-					"my_proxy"
-				],
-				"query_type": [
-					"A"
-				],
-				"server": "dns_fakeip",
-				"rewrite_ttl": 1
-			},
-			{
-				"rule_set": [
-					"cn"
-				],
-				"query_type": [
-					"A"
-				],
-				"server": "dns_direct"
-			},
-			{
-				"fallback_rules": [
-					{
-						"rule_set": [
-							"cnip"
-						],
-						"server": "dns_direct"
-					},
-					{
-						"match_all": true,
-						"server": "dns_fakeip",
-						"rewrite_ttl": 1
-					}
-				],
-				"server": "dns_proxy"
 			}
 		],
-		"final": "dns_direct",
-		"strategy": "prefer_ipv4",
-		"independent_cache": true,
+		"final": "dns_proxy",
+		"strategy": "ipv4_only",
+		"independent_cache": false,
 		"lazy_cache": true,
 		"reverse_mapping": true,
-		"mapping_override": true,
-		"fakeip": {
-			"enabled": true,
-			"inet4_range": "198.18.0.0/15",
-			"exclude_rule": {
-				"rule_set": [
-					"fakeip-filter",
-					"private"
-				]
-			}
-		}
+		"mapping_override": true
 	}
 }
