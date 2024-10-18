@@ -12,7 +12,10 @@
                 "bitfinex.com",
                 "ifastgb.com",
                 "schwab.com",
-                "sc.com"
+                "sc.com",
+                "transferwise.com",
+                "wise.com"
+              ]
             ],
             "domain_keyword": [
                 "ibkr",
