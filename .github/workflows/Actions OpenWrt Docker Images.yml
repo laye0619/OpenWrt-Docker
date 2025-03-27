@@ -142,8 +142,8 @@ jobs:
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/openwrt:latest
           docker save -o openwrt.tar ${{ secrets.DOCKERHUB_USERNAME }}/openwrt:latest
 
-      - name: Upload Image
-        uses: actions/upload-artifact@v3
-        with:
-          name: openwrt.tar
-          path: openwrt.tar 
+      # - name: Upload Image
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: openwrt.tar
+      #     path: openwrt.tar 
