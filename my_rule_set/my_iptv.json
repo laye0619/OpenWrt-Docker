@@ -13,13 +13,6 @@
                 "m16tv.cfd",
                 "freetv.fun",
                 "aptv.app"
-            ],
-            "package_name": [
-                "com.kimen.aptvpro",
-                "com.kimen"
-            ],
-            "process_name": [
-                "APTV"
             ]
         }
     ]
