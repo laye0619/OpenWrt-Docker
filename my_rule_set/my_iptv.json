@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain": [
+                "line.hyutv.xyz",
+                "aktv-stream.m16tv.cfd",
+                "stream1.freetv.fun"
+            ],
+            "domain_suffix": [
+                "hyutv.xyz",
+                "m16tv.cfd",
+                "freetv.fun"
+            ]
+        }
+    ]
+}
