@@ -5,12 +5,21 @@
             "domain": [
                 "line.hyutv.xyz",
                 "aktv-stream.m16tv.cfd",
-                "stream1.freetv.fun"
+                "stream1.freetv.fun",
+                "epg.aptv.app"
             ],
             "domain_suffix": [
                 "hyutv.xyz",
                 "m16tv.cfd",
-                "freetv.fun"
+                "freetv.fun",
+                "aptv.app"
+            ],
+            "package_name": [
+                "com.kimen.aptvpro",
+                "com.kimen"
+            ],
+            "process_name": [
+                "APTV"
             ]
         }
     ]
