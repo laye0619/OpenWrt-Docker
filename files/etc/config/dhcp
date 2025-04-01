@@ -55,3 +55,13 @@ config host
 	list mac 'A0:CE:C8:32:3D:A0'
 	option ip '192.168.1.23'
 
+config host
+	option name 'iLO'
+	list mac 'a0:48:1c:b8:e8:4a'
+	option ip '192.168.1.87'
+
+config host
+	option name 'NAS'
+	list mac 'a0:48:1c:b8:e8:48'
+	option ip '192.168.1.88'
+
